@@ -1,6 +1,9 @@
 package com.softserve.academy;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class BookManager {
@@ -15,6 +18,9 @@ public class BookManager {
         }
         books.add(book);
     }
+
+
+
 
     public List<String> listOfAllAuthors() {
         return books.stream()
@@ -92,6 +98,15 @@ public class BookManager {
         }
     }
 
+
+    public void mergeCollectionsWithDuplicates(List<Book> otherBooks) {
+        if (otherBooks == null) throw new IllegalArgumentException("Other collection cannot be null");
+        for (Book book : otherBooks) {
+            if (book == null) continue;
+                books.add(book);
+        }
+    }
+
     public List<Book> subCollectionByGenre(String genre) {
         if (genre == null || genre.isBlank()) throw new IllegalArgumentException("Genre cannot be null or empty");
         return books.stream()
@@ -101,5 +116,13 @@ public class BookManager {
 
     public int size() {
         return books.size();
+    }
+
+    public List<Book> getBooks() {
+        return books;
+    }
+
+    public void deleteAllBooks() {
+        books.removeAll(books);
     }
 }
