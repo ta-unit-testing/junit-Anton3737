@@ -348,51 +348,5 @@ class BookManagerTest {
 
     // ===== Додаткові тести (заглушки для майбутньої реалізації) =====
 
-    @Test
-    @Disabled("TODO: Додати тест на case-insensitive порівняння при пошуку автора")
-    void shouldFindBookByAuthorCaseInsensitive() {
-        fail("Not implemented yet");
-    }
 
-    @Test
-    @Disabled("TODO: Додати тест на збереження порядку після merge")
-    void shouldPreserveOrderAfterMerge() {
-        fail("Not implemented yet");
-    }
-
-    @Test
-    @Disabled("TODO: Додати тест на роботу з порожніми strings у Book")
-    void shouldHandleEmptyStringsInBook() {
-        fail("Not implemented yet");
-    }
-
-    @Test
-    @Disabled("TODO: Додати тест на перевірку, що listOfAllAuthors не повертає null")
-    void shouldNeverReturnNullFromListOfAllAuthors() {
-        fail("Not implemented yet");
-    }
-
-    @Test
-    @Disabled("TODO: Додати тест на великі колекції (performance test)")
-    void shouldHandleLargeCollectionsEfficiently() {
-        fail("Not implemented yet");
-    }
-
-    @Test
-    @Disabled("TODO: Додати тест на concurrent modifications")
-    void shouldHandleConcurrentModifications() {
-        fail("Not implemented yet");
-    }
-
-    @Test
-    @Disabled("TODO: Додати тест на сортування стабільності")
-    void shouldMaintainStableSortOrder() {
-        fail("Not implemented yet");
-    }
-
-    @Test
-    @Disabled("TODO: Додати тест на видалення всіх книг")
-    void shouldHandleRemovalOfAllBooks() {
-        fail("Not implemented yet");
-    }
 }
